@@ -151,15 +151,6 @@ DisplayGraph.prototype = {
     displayGraph: function() {
         if (!$) return;
 
-        //Nathan
-        if (!(window.d3 && window.dagreD3))
-            {
-            window.d3=require("d3");
-            window.dagreD3=require("dagre");
-            console.log(window.d3,window.dagreD3)
-            }
-            //Nathan
-    
         if (window.d3 && window.dagreD3) {
             this._createGraphApply();
             return;
@@ -167,14 +158,24 @@ DisplayGraph.prototype = {
 
         var d3url = '//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js';
         var dagreurl = '//cdn.jsdelivr.net/dagre-d3/0.2.9/dagre-d3.min.js';
-
+//I nathan added
         var cb = this._createGraphApply.bind(this);
         $.getScript(d3url).done(function() {
-            $.getScript(dagreurl).done(cb);
+            $.getScript(dagreurl).done(
+                
+                function() {
+                    // Ensure D3 is available globally
+                    if (!window.d3) {
+                        window.d3 = require('d3');
+                    }
+                    cb()
+        }
+    );
         });
     },
 
     _createGraphApply: function() {
+
         var diGraph = new window.dagreD3.Digraph();
         if (this._displayNode) this._graphNode.generateNodeAndLink(diGraph);
         if (this._displayRenderer) this._graphRender.generateNodeAndLink(diGraph);
@@ -185,7 +186,6 @@ DisplayGraph.prototype = {
 
         // Create the renderer
         var renderer = (this.renderer = new window.dagreD3.Renderer());
-zzzz
         // Set up an SVG group so that we can translate the final graph.
         var svg = window.d3.select(this._$svg.get(0));
         var svgGroup = svg.append('g');

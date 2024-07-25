@@ -1,0 +1,397 @@
+{
+  "Generator": "OpenSceneGraph 3.5.6",
+  "Version": 9,
+  "osg.Node": {
+    "Children": [
+      {
+        "osg.MatrixTransform": {
+          "UniqueID": 0,
+          "Name": "Collada visual scene group",
+          "Children": [
+            {
+              "osg.MatrixTransform": {
+                "UniqueID": 2,
+                "Name": "g",
+                "Children": [
+                  {
+                    "osg.Node": {
+                      "UniqueID": 4,
+                      "Children": [
+                        {
+                          "osg.Geometry": {
+                            "UniqueID": 5,
+                            "Name": "defaultMaterial",
+                            "PrimitiveSetList": [
+                              {
+                                "DrawElementsUInt": {
+                                  "UniqueID": 16,
+                                  "Indices": {
+                                    "UniqueID": 17,
+                                    "Array": {
+                                      "Uint32Array": {
+                                        "File": "model_file.binz",
+                                        "Size": 1879,
+                                        "Offset": 0,
+                                        "Encoding": "varint"
+                                      }
+                                    },
+                                    "ItemSize": 1,
+                                    "Type": "ELEMENT_ARRAY_BUFFER"
+                                  },
+                                  "Mode": "TRIANGLE_STRIP"
+                                }
+                              },
+                              {
+                                "DrawElementsUShort": {
+                                  "UniqueID": 18,
+                                  "Indices": {
+                                    "UniqueID": 19,
+                                    "Array": {
+                                      "Uint16Array": {
+                                        "File": "model_file.binz",
+                                        "Size": 54,
+                                        "Offset": 2376,
+                                        "Encoding": "varint"
+                                      }
+                                    },
+                                    "ItemSize": 1,
+                                    "Type": "ELEMENT_ARRAY_BUFFER"
+                                  },
+                                  "Mode": "TRIANGLES"
+                                }
+                              }
+                            ],
+                            "StateSet": {
+                              "osg.StateSet": {
+                                "UniqueID": 6,
+                                "Name": "initialShadingGroup",
+                                "AttributeList": [
+                                  {
+                                    "osg.Material": {
+                                      "UniqueID": 8,
+                                      "Ambient": [
+                                        0,
+                                        0,
+                                        0,
+                                        1
+                                      ],
+                                      "Diffuse": [
+                                        0.6,
+                                        0.6,
+                                        0.6,
+                                        1
+                                      ],
+                                      "Emission": [
+                                        0,
+                                        0,
+                                        0,
+                                        1
+                                      ],
+                                      "Shininess": 0,
+                                      "Specular": [
+                                        0,
+                                        0,
+                                        0,
+                                        1
+                                      ],
+                                      "UserDataContainer": {
+                                        "UniqueID": 9,
+                                        "Values": [
+                                          {
+                                            "Name": "source",
+                                            "Value": "substancepainter"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "osg.CullFace": {
+                                      "UniqueID": 10,
+                                      "Mode": "BACK"
+                                    }
+                                  }
+                                ],
+                                "UserDataContainer": {
+                                  "UniqueID": 7,
+                                  "Values": [
+                                    {
+                                      "Name": "source",
+                                      "Value": "substancepainter"
+                                    },
+                                    {
+                                      "Name": "source_tool",
+                                      "Value": "Assimp Exporter"
+                                    },
+                                    {
+                                      "Name": "phong_ambient_color",
+                                      "Value": "[ 0, 0, 0]"
+                                    },
+                                    {
+                                      "Name": "phong_diffuse_color",
+                                      "Value": "[ 0.6, 0.6, 0.6]"
+                                    },
+                                    {
+                                      "Name": "phong_emission_color",
+                                      "Value": "[ 0, 0, 0]"
+                                    },
+                                    {
+                                      "Name": "phong_specular_color",
+                                      "Value": "[ 0, 0, 0]"
+                                    },
+                                    {
+                                      "Name": "phong_shininess_amount",
+                                      "Value": "0"
+                                    },
+                                    {
+                                      "Name": "UniqueID",
+                                      "Value": "1"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "UserDataContainer": {
+                              "UniqueID": 11,
+                              "Values": [
+                                {
+                                  "Name": "attributes",
+                                  "Value": "55"
+                                },
+                                {
+                                  "Name": "vertex_bits",
+                                  "Value": "20"
+                                },
+                                {
+                                  "Name": "vertex_mode",
+                                  "Value": "3"
+                                },
+                                {
+                                  "Name": "uv_0_bits",
+                                  "Value": "14"
+                                },
+                                {
+                                  "Name": "uv_0_mode",
+                                  "Value": "3"
+                                },
+                                {
+                                  "Name": "epsilon",
+                                  "Value": "0.25"
+                                },
+                                {
+                                  "Name": "nphi",
+                                  "Value": "720"
+                                },
+                                {
+                                  "Name": "triangle_mode",
+                                  "Value": "7"
+                                },
+                                {
+                                  "Name": "vtx_bbl_x",
+                                  "Value": "-1"
+                                },
+                                {
+                                  "Name": "vtx_bbl_y",
+                                  "Value": "-0.812674"
+                                },
+                                {
+                                  "Name": "vtx_bbl_z",
+                                  "Value": "-0.253587"
+                                },
+                                {
+                                  "Name": "vtx_h_x",
+                                  "Value": "3.8147e-06"
+                                },
+                                {
+                                  "Name": "vtx_h_y",
+                                  "Value": "3.10011e-06"
+                                },
+                                {
+                                  "Name": "vtx_h_z",
+                                  "Value": "9.67359e-07"
+                                },
+                                {
+                                  "Name": "uv_0_bbl_x",
+                                  "Value": "0.001992"
+                                },
+                                {
+                                  "Name": "uv_0_bbl_y",
+                                  "Value": "0.001979"
+                                },
+                                {
+                                  "Name": "uv_0_h_x",
+                                  "Value": "0.000121599"
+                                },
+                                {
+                                  "Name": "uv_0_h_y",
+                                  "Value": "0.00012082"
+                                }
+                              ]
+                            },
+                            "VertexAttributeList": {
+                              "Normal": {
+                                "UniqueID": 13,
+                                "Array": {
+                                  "Uint32Array": {
+                                    "File": "model_file.binz",
+                                    "Size": 2106,
+                                    "Offset": 2480,
+                                    "Encoding": "varint"
+                                  }
+                                },
+                                "ItemSize": 2,
+                                "Type": "ARRAY_BUFFER"
+                              },
+                              "Tangent": {
+                                "UniqueID": 15,
+                                "Array": {
+                                  "Uint32Array": {
+                                    "File": "model_file.binz",
+                                    "Size": 2106,
+                                    "Offset": 9884,
+                                    "Encoding": "varint"
+                                  }
+                                },
+                                "ItemSize": 2,
+                                "Type": "ARRAY_BUFFER"
+                              },
+                              "TexCoord0": {
+                                "UniqueID": 14,
+                                "Array": {
+                                  "Int32Array": {
+                                    "File": "model_file.binz",
+                                    "Size": 2106,
+                                    "Offset": 16496,
+                                    "Encoding": "varint"
+                                  }
+                                },
+                                "ItemSize": 2,
+                                "Type": "ARRAY_BUFFER"
+                              },
+                              "Vertex": {
+                                "UniqueID": 12,
+                                "Array": {
+                                  "Int32Array": {
+                                    "File": "model_file.binz",
+                                    "Size": 2106,
+                                    "Offset": 22228,
+                                    "Encoding": "varint"
+                                  }
+                                },
+                                "ItemSize": 3,
+                                "Type": "ARRAY_BUFFER"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "osg.Geometry": {
+                            "UniqueID": 20,
+                            "Name": "defaultMaterial",
+                            "PrimitiveSetList": [
+                              {
+                                "DrawElementsUShort": {
+                                  "UniqueID": 22,
+                                  "Indices": {
+                                    "UniqueID": 23,
+                                    "Array": {
+                                      "Uint16Array": {
+                                        "File": "model_file_wireframe.binz",
+                                        "Size": 6470,
+                                        "Offset": 0,
+                                        "Encoding": "varint"
+                                      }
+                                    },
+                                    "ItemSize": 1,
+                                    "Type": "ELEMENT_ARRAY_BUFFER"
+                                  },
+                                  "Mode": "LINES"
+                                }
+                              }
+                            ],
+                            "UserDataContainer": {
+                              "UniqueID": 21,
+                              "Values": [
+                                {
+                                  "Name": "wireframe",
+                                  "Value": "1"
+                                },
+                                {
+                                  "Name": "attributes",
+                                  "Value": "1"
+                                }
+                              ]
+                            },
+                            "VertexAttributeList": {
+                              "Vertex": {
+                                "UniqueID": 12
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "Matrix": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "UserDataContainer": {
+                  "UniqueID": 3,
+                  "Values": [
+                    {
+                      "Name": "dae_node_id",
+                      "Value": "g"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "Matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            -4.37114e-8,
+            1,
+            0,
+            0,
+            -1,
+            -4.37114e-8,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "UserDataContainer": {
+            "UniqueID": 1,
+            "Values": [
+              {
+                "Name": "source",
+                "Value": "substancepainter"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
