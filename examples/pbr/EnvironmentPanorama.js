@@ -67,7 +67,7 @@ window.EnvironmentPanorama = (function() {
             var readInputArray = function(inputArray) {
                 var data = inputArray;
                 if (osgDB.isGunzipBuffer(data)) data = osgDB.gunzip(data);
-                console.log(osgDB.isGunzipBuffer,data);
+
                 var size = this._size;
 
                 var imageData, deinterleave;

@@ -18,7 +18,7 @@ var main = function() {
     viewer.setupManipulator();
     viewer.run();
 
-    var modelURL = 'http://127.0.0.1:5501/Nathan/file.osgjs';
+    var modelURL = 'http://osgjs.org/examples/media/models/material-test/file.osgjs';
     var request = osgDB.readNodeURL(modelURL);
 
     request

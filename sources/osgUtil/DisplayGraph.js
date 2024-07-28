@@ -158,7 +158,7 @@ DisplayGraph.prototype = {
 
         var d3url = '//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js';
         var dagreurl = '//cdn.jsdelivr.net/dagre-d3/0.2.9/dagre-d3.min.js';
-//I nathan added
+
         var cb = this._createGraphApply.bind(this);
         $.getScript(d3url).done(function() {
             $.getScript(dagreurl).done(

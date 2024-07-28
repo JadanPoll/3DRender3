@@ -10,7 +10,7 @@ import FileHelper from 'osgDB/FileHelper';
 import requestFile from 'osgDB/requestFile';
 import zlib from 'osgDB/zlib';
 
-console.log("Nathan Amanlwah",osgDB,zlib)
+
 var osgDB = {};
 osgDB.Input = Input;
 utils.objectMix(osgDB, ReaderParser);
