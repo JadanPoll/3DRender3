@@ -1,72 +1,51 @@
-### Status
+# OSG.JS WebGL Framework
 
-[![Join the chat at https://gitter.im/cedricpinson/osgjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cedricpinson/osgjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/cedricpinson/osgjs.svg?branch=master)](https://travis-ci.org/cedricpinson/osgjs)
-[![Coverity Status](https://scan.coverity.com/projects/9275/badge.svg)](https://scan.coverity.com/projects/cedricpinson-osgjs)
-OSG.JS WebGL framework
-----------------------------
+[OSGJS Website](http://osgjs.org/)
 
-(http://osgjs.org/)
+## Status
+**Disclaimer**: This is a static, non-NPM dependent working version of OSGJS originally created by [Cédric Pinson](https://github.com/cedricpinson/osgjs). You can run it by simply opening the project in VSCode and using the Live Server extension. It might not be as fast as the original, but it works 95% as intended. All dependencies, except for benchmarks and tests, are self-contained.
 
-OSGJS is a WebGL framework based on OpenSceneGraph concepts. It allows an individual to use an “OpenSceneGraph-like” toolbox to interact with WebGL via JavaScript, and provides facilities for exporting various assets to the osgjs format. The API is kept as similar to OpenSceneGraph as possible, providing a familiar environment to veterans of the library and introducing newcomers to a popular and heavily-scrutinzed set of interfaces
+## Introduction
+OSGJS is a WebGL framework inspired by OpenSceneGraph concepts. It allows developers to use an “OpenSceneGraph-like” toolbox to interact with WebGL via JavaScript. Additionally, it provides facilities for exporting various assets to the OSGJS format. The API is designed to be as similar to OpenSceneGraph as possible, providing a familiar environment for veterans of the library and an accessible introduction for newcomers.
 
+## Features
+- WebGL framework based on OpenSceneGraph.
+- JavaScript-based interaction with WebGL.
+- Exporting assets to the OSGJS format.
+- API similar to OpenSceneGraph for ease of use.
 
-The mailing list is available here: http://groups.google.com/group/osgjs
+## Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/JadanPoll/OSGJS-Static.git
+    ```
+2. Open the project in Visual Studio Code.
+3. Install the Live Server extension in VSCode.
+4. Right-click on `index.html` and select "Open with Live Server".
 
-If you are interested in contributing, contact us on the osgjs gitter channel ( https://gitter.im/cedricpinson/osgjs ) or on the IRC channel #osgjs on Freenode. Also by e-mail at contact@osgjs.org. Follow @trigrou on twitter to get news and updates.
+## Usage
+1. Open the project in VSCode.
+2. Start the Live Server to view the project in your browser.
+3. Explore and modify the code as needed.
 
-Examples / Tutorials
------------------------
-- using osgjs with typescript http://marino.dk/mproject/ with sourcecode https://github.com/Crisium/mproject
-- examples http://osgjs.org/#examples
-- tutorials on codepen http://codepen.io/collection/CbvIg/
+## Examples and Tutorials
+- **Using OSGJS with TypeScript**: [Demo](http://marino.dk/mproject/) | [Source Code](https://github.com/Crisium/mproject)
+- **Examples**: [OSGJS Examples](http://osgjs.org/#examples)
+- **Tutorials on CodePen**: [CodePen Collection](http://codepen.io/collection/CbvIg/)
 
+## Contributing
+If you want to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-How to build your own osgjs
-----------------------------
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-First, clone a copy of the main git repo by running:
+## Acknowledgements
+- [Cédric Pinson](https://github.com/cedricpinson) for the original OSGJS framework.
 
-    git clone git://github.com/cedricpinson/osgjs.git
-    cd osgjs
+For more details, visit the [project repository](https://github.com/JadanPoll/OSGJS-Static).
 
-Install required node dependencies:
-
-    # if you dont have grunt-cli installed, use sudo on linux
-    # npm install -g grunt-cli
-    npm install
-
-Compile:
-
-    grunt build
-
-Compile whenever watched files change:
-
-    grunt watch
-
-The built version of osgjs will be put in the `build/` subdirectory.
-
-Running the examples
---------------------
-
-Download the osgjs-data submodule repository. It will be added to the examples/media folder:
-
-    grunt sync
-
-Then simply type in the command-line:
-
-    grunt serve
-
-You can now test some real examples http://localhost:9000/examples http://localhost:9000/tutorial
-
-Executing unitary tests
------------------------
-
-Launch:
-
-    grunt test
-
-Convert file to osgjs
----------------------
-
-You can easily convert 3D file with osgconv tool. To do that you can get the docker image here https://hub.docker.com/r/trigrou/osg/ and use it to convert a 3d file into osgjs file format. There is more infos on [wiki](https://github.com/cedricpinson/osgjs/wiki/Convert-model-with-OSG)
